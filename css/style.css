@@ -15,7 +15,8 @@ body {
 }
 .box {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 
 .box div {
@@ -31,6 +32,10 @@ body {
     padding: 10px;
 }
 .box-3 {
+    flex: 1;
+    padding: 10px;
+}
+.box-4 {
     flex: 1;
     padding: 10px;
 }
@@ -77,17 +82,10 @@ button:hover {
 		font-size: 50px;
 		transition: 1s;
     }
-    .box {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 @media (max-width: 300px){
 	h1 {
 		font-size: 20px;
 		transition: 1s;
-    }
-    .box-1 {
-        width: 100%;
     }
 }
