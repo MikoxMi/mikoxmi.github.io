@@ -1,13 +1,10 @@
 body {
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) ), url('/img/back.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) ), url('/img/back.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment:fixed;
-    height:100%;
-  }
-
+    background-attachment: fixed;
+    background-position: top;
+}
 *{
     margin: 0;
     padding: 0;
@@ -81,6 +78,9 @@ button:hover {
         flex-direction: column;
         align-items: center;
     }
+    body {
+        background-size: 120%;
+    }
 }
 @media (max-width: 300px){
 	h1 {
@@ -89,5 +89,8 @@ button:hover {
     }
     .box-1 {
         width: 100%;
+    }
+    body {
+        background-size: 150%;
     }
 }
