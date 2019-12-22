@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) ), url('/img/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.box {
+    display: flex;
+    align-items: flex-start;
+}
+
+.box div {
+    text-align: center;
+    margin-right: 1%;
+}
+.box-1 {
+    flex: 1;
+    padding: 10px;
+}
+.box-2 {
+    flex: 1;
+    padding: 10px;
+}
+.box-3 {
+    flex: 1;
+    padding: 10px;
+}
+
+   
+
+
+h1 {
+    transition: 1s;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 6em;
+}
+
+h2 {
+    transition: 1s;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+button {
+    margin: 0 auto;
+    padding: 16px 26px;
+    border: 0;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+}
+button:hover {
+    color: white;
+    background-color: green;
+    border-radius: 0;
+    transition: 0.5s;
+}
+
+.section{
+	text-align:center;
+}
+
+ @media (max-width: 850px){
+    h1 {
+		font-size: 50px;
+		transition: 1s;
+    }
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 300px){
+	h1 {
+		font-size: 20px;
+		transition: 1s;
+    }
+    .box-1 {
+        width: 100%;
+    }
+}
